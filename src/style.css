@@ -58,7 +58,6 @@ html, body {
 .actions {
     display: grid;
     grid-template-rows: repeat(4,1fr);
-    /* align-items: center; */
     font-size: 24px;
     position: relative;
     left: 20px;
@@ -150,7 +149,6 @@ a {
     bottom: 0%;
     right: 15%;
     font-size: 48px;
-    /* text-align: right; */
 }
 
 #idle {
@@ -190,18 +188,6 @@ a {
 
 }
 
-.list-items {
-  display: grid;
-  grid-row: 6/18;
-  grid-template-rows: repeat(6, 1fr);
-  row-gap: 10px;
-}
-
-.list-item {
-  grid-column: 1fr;
-  background-color: var(--light-white);;
-}
-
 .filter {
   position: relative;
   display: grid;
@@ -222,7 +208,6 @@ a {
 #icon-search {
   background-image: url(search_icon.png);
   background-repeat: no-repeat;
-  /* background-position: 10px 7px; */
 }
 
 .filter-input {
@@ -246,4 +231,42 @@ a {
   top: 40%;
   left: 65%;
   font-size: 20px;
+}
+
+.list-items {
+  display: grid;
+  grid-row: 6/18;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: repeat(7,1fr) 7fr;
+  grid-column: 1fr;
+  background-color: var(--light-white);;
+}
+
+.list-item-left {
+  font-size: 70px;
+  grid-column: 2/3;
+  text-align: center;
+  align-items: center;
+}
+
+.list-item-right {
+  display: grid;
+  grid-column: 3/9;
+  grid-auto-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.rightlist-firstline {
+  text-align: center;
+}
+
+.rightlist-secondline {
+  text-align: left;
+  position: relative;
+  left: 30px;
 }
