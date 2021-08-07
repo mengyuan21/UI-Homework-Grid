@@ -133,7 +133,7 @@ a {
     grid-row: 1/4;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    background-color: var(--light-white);;
+    background-color: var(--dark-white);;
 }
 
 #building {
@@ -174,7 +174,6 @@ a {
     background-color: var(--light-white);;
 }
 
-
 #table-item {
   font-size: 12px;
 }
@@ -201,4 +200,31 @@ a {
 .list-item {
   grid-column: 1fr;
   background-color: var(--light-white);;
+}
+
+.filter {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
+}
+
+.filter-button {
+  position: relative;
+  background-color: var(--light-white);
+  border: 5px;
+  border-right: 1px solid var(--dark-white);
+}
+
+.filter-button:hover {
+  border-bottom: solid var(--light-green-blue);
+}
+
+.filter-input {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  height: 30px;
+  width: 150px;
+  border: 0px;
+  background-color: rgb(212, 207, 207);
 }
