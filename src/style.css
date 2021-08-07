@@ -46,7 +46,8 @@ html, body {
 }
 
 .histroy {
-  
+  display: flex;
+  align-items: flex-end;
 }
 
 #title{
