@@ -49,12 +49,27 @@
             </div>
             <div class="right-container">
                 <div class="dashboard">
-                    <div id="building"> Building
+                    <div style="display: flex; background-color:#FF9A2A;">
+                        <p style="width: 60px; color: #f3f3f3; font-size: 18px; font: bold;">Building</p >
+                        <img src="cog-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
+                        <p style="color: #f3f3f3; font-size: 48px;">3</p >
+                    </div>
+
+                    <div style="display: flex; background-color:#7FBC39;">
+                        <p style="width: 60px;  color: #f3f3f3; font-size: 18px; font: bold;">Idle</p >
+                        <img src="coffee-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
+                        <p style="color: #f3f3f3; font-size: 48px;">5</p >
+                    </div>
+
+
+
+
+                    <!-- <div id="building"> Building
                         <p id="building-number"> 3 </p>
                     </div>
                     <div id="idle"> idle
                         <p id="idle-number"> 5 </p>
-                    </div>
+                    </div> -->
                     <div id="dashboard-info">
                         <div id="table-item">ALL</div>
                         <div id="table-item">PHYSICAL</div>
@@ -97,7 +112,19 @@
 
                             
                             <div class="rightlist-secondline">
-                                second-line
+                                <i class="fas fa-plus-square"></i>
+                                <span id="second-line-delete" > Firefox </span>
+                                <i class="fas fa-trash-alt" style="font-size: 16px;"></i>
+                                <i class="fas fa-plus-square"></i>
+                                <span id="second-line-delete" > Safari </span>
+                                <i class="fas fa-trash-alt" style="font-size: 16px;"></i>
+                                <i class="fas fa-plus-square"></i>
+                                <span id="second-line-delete" > Ubuntu </span>
+                                <i class="fas fa-trash-alt" style="font-size: 16px;"></i>
+                                <i class="fas fa-plus-square"></i>
+                                <span id="second-line-delete" > Chrome </span>
+                                <i class="fas fa-trash-alt" style="font-size: 16px;"></i>
+                                <button id="button-second-line-deny"> Deny </button>
                             </div>
                         </div>
                     </div>
