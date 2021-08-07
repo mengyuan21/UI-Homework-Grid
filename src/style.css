@@ -41,8 +41,48 @@ html, body {
 }
 
 .actions {
-  font-size: 24px;
-  color: #ccc;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    /* align-items: center; */
+    font-size: 24px;
+    color: #ccc;
+}
+
+
+#actions-dashboard::before {
+    content: url(icon1.png); 
+}
+
+#actions-dashboard:hover {
+  color: #00B4CF;
+  background-color: #435466;
+}
+
+#actions-agent::before {
+
+}
+
+#actions-agent:hover {
+  background-color: #435466;
+  color: #00B4CF;
+}
+
+#actions-mycruise::before{
+
+}
+
+#actions-mycruise:hover {
+  color: #00B4CF;
+  background-color: #435466;
+}
+
+#actions-help::before {
+
+}
+
+#actions-help:hover {
+  color: #00B4CF;
+  background-color: #435466;
 }
 
 .histroy {
@@ -50,14 +90,14 @@ html, body {
   align-items: flex-end;
 }
 
-#title{
-  font-size: 24px;
-  color: #ccc;
-}
-
 #history-statement {
   font-size: 18;
   color: #999;
+}
+
+#title{
+  font-size: 24px;
+  color: #ccc;
 }
 
 .right-container {
