@@ -1,4 +1,10 @@
-/* 字体， sidebar-icon， header图片， ，  */
+/* Wait to be done:
+字体， 
+sidebar-icon， 
+header图片， 
+背景图片，  
+
+*/
 
 
 html, body { 
@@ -120,7 +126,7 @@ a {
     grid-row: 1/4;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
-    background-color: #f3f3f3;
+    background-color: #E1E4E6;
 }
 
 #building {
@@ -161,7 +167,6 @@ a {
     background-color: #f3f3f3;
 }
 
-
 #table-item {
   font-size: 12px;
 }
@@ -188,4 +193,20 @@ a {
 .list-item {
   grid-column: 1fr;
   background-color: #f3f3f3;
+}
+
+.filter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+.filter-icon1{
+  /* grid-row: 9/10; */
+  
+}
+
+.filter-icon2{
+  /* grid-row: 10/11; */
 }
