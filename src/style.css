@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: #f3f3f3;
+  background-color: #E1E4E6;
 }
 
 .container {
@@ -16,17 +16,18 @@ html, body {
 
 .header {
     text-align: center;
-    background-color: white;
+    background-color: #f3f3f3;
 }
 
 .footer {
     text-align: center;
-    background-color: white;
+    background-color: #f3f3f3;
 }
 
 .main-body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
+    column-gap: 20px;
 }
 
 .left-container {
@@ -36,6 +37,49 @@ html, body {
 
 
 .right-container {
+    display: grid;
+    grid-template-rows: repeat(17, 1fr);
     grid-column: 4/10;
-    background-color: white;
+    background-color: #E1E4E6;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.dashboard{
+    display: grid;
+    grid-row: 1/4;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    background-color: #f3f3f3;
+}
+
+#building {
+    background-color: #FF9A2A;
+}
+
+#idle {
+    background-color: #7FBC39;
+}
+
+#dashboard-info {
+    background-color: #f3f3f3;
+}
+
+.filter{
+  grid-row: 4/6;
+  background-color: yellowgreen;
+
+}
+
+
+.list-items {
+  display: grid;
+  grid-row: 6/18;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+}
+
+.list-item {
+  grid-column: 1fr;
+  background-color: wheat;
 }
