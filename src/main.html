@@ -16,23 +16,34 @@
                 <span style="color: var(--light-black); font-size: 35px;"><b>RU</b></span>
                 <span style="color: var(--light-green-blue); font-size: 50px;"><b>I</b></span>
                 <span style="color: var(--light-black); font-size: 35px;"><b>SE</b></span>
-
+            </div>
+            <div class="dropdown">
+                <button class="button-user-login"> user pic </button>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Sign Out</a>
+                </div>
             </div>
         </div>
         <div class="main-body">
             <div class="left-container">
                 <div class="actions">
                     <div id="actions-dashboard">
-                        <a href="#" id="actions-link"> DASHBOARD </a>
+                        <!-- <p class="actions-link dashboard-link"> Dashboard </p> -->
+                        <img class="icon-dashboard" src="img/dashboard.svg">
+                        <a href="#" class="actions-link"> DASHBOARD </a>
                     </div>
                     <div id="actions-agent">
-                        <a href="#" id="actions-link"> AGENT </a>
+                        <img class="icon-dashboard" src="img/tree.svg">
+                        <a href="#" class="actions-link"> AGENT </a>
                     </div>
                     <div id="actions-mycruise">
-                        <a href="#" id="actions-link" > MY CRUISE </a>
+                        <img class="icon-dashboard" src="img/cruise.svg">
+                        <a href="#" class="actions-link"> MY CRUISE </a>
                     </div>
                     <div id="actions-help">
-                        <a href="#" id="actions-link"> HELP </a>
+                        <img class="icon-dashboard" src="img/help.svg">
+                        <a href="#" class="actions-link"> HELP </a>
                     </div>
                 </div>
                 <div class="histroy">
@@ -66,7 +77,8 @@
                     <div style="display: flex; background-color:#FF9A2A; position: relative;">
                         <p
                             style="width: 60px; color: #f3f3f3; font-size: 18px; font: bold; position: relative; left: 20px;">
-                            <b>Building</b></p>
+                            <b>Building</b>
+                        </p>
                         <img src="cog-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
                         <p style="color: #f3f3f3; font-size: 48px; position: absolute; right: 10%;"><b>3</b></p>
                     </div>
@@ -74,7 +86,8 @@
                     <div style="display: flex; background-color:#7FBC39; position: relative;">
                         <p
                             style="width: 60px;  color: #f3f3f3; font-size: 18px; font: bold; position: relative; left: 20px;">
-                            <b>Idle</b></p>
+                            <b>Idle</b>
+                        </p>
                         <img src="coffee-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
                         <p style="color: #f3f3f3; font-size: 48px; position: absolute; right: 10%;"><b>5</b></p>
                     </div>
@@ -107,38 +120,39 @@
                         </div>
                         <div class="list-item-right">
                             <div class="rightlist-firstline">
-                                    <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr01.thoughtworks.com</strong></span>
-                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--green);">
-                                        &nbsp; &nbsp;idle &nbsp; &nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.102 </span>
-                                    <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                <i class="fas fa-laptop"></i>
+                                <span
+                                    style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr01.thoughtworks.com</strong></span>
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <span style="font-size: 14px;color: white; background-color:var(--filter--green);">
+                                    &nbsp; &nbsp;idle &nbsp; &nbsp;</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                <i class="fas fa-info-circle"></i>
+                                <span style="color:var(--dark-black);"> 192.168.1.102 </span>
+                                <i class="far fa-folder"></i>
+                                <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
                             </div>
 
 
                             <div class="rightlist-secondline">
-                                    <button class="button-second-line-plus"> <b>+</b></button>
-                                    <button class="button-second-line-delete"><b>Firefox</b>
-                                        <img src="src/delete--v1.png" style="font-size: 16px;" />
-                                    </button>&nbsp;
-                                    <button class="button-second-line-plus"> <b>+</b></button>
-                                    <button class="button-second-line-delete"><b>Safari</b> 
-                                        <img src="src/delete--v1.png" style="font-size: 16px;" />
-                                    </button>&nbsp;
-                                    <button class="button-second-line-plus"> <b>+</b></button>
-                                    <button class="button-second-line-delete"> <b>Ubuntu</b>
-                                        <img src="src/delete--v1.png" style="font-size: 16px;" />
-                                    </button>&nbsp;
-                                    <button class="button-second-line-plus"> <b>+</b></button>
-                                    <button class="button-second-line-delete"><b>Chrome</b>
-                                        <img src="src/delete--v1.png" style="font-size: 16px;" />
-                                    </button>
-                                    <button class="button-second-line-deny"><b>Deny </b></button>
-                               
+                                <button class="button-second-line-plus"> <b>+</b></button>
+                                <button class="button-second-line-delete"><b>Firefox</b>
+                                    <img src="src/delete--v1.png" style="font-size: 16px;" />
+                                </button>&nbsp;
+                                <button class="button-second-line-plus"> <b>+</b></button>
+                                <button class="button-second-line-delete"><b>Safari</b>
+                                    <img src="src/delete--v1.png" style="font-size: 16px;" />
+                                </button>&nbsp;
+                                <button class="button-second-line-plus"> <b>+</b></button>
+                                <button class="button-second-line-delete"> <b>Ubuntu</b>
+                                    <img src="src/delete--v1.png" style="font-size: 16px;" />
+                                </button>&nbsp;
+                                <button class="button-second-line-plus"> <b>+</b></button>
+                                <button class="button-second-line-delete"><b>Chrome</b>
+                                    <img src="src/delete--v1.png" style="font-size: 16px;" />
+                                </button>
+                                <button class="button-second-line-deny"><b>Deny </b></button>
+
                             </div>
                         </div>
                     </div>
@@ -147,7 +161,7 @@
                             <i class="fab fa-windows"></i>
                         </div>
                         <div class="list-item-right">
-                            <div class="rightlist-firstline" >
+                            <div class="rightlist-firstline">
                                 <div id="firstline-left"> left </div>
                                 <div id="firstline-right"> right </div>
                             </div>
@@ -211,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="web-footer">
             <p> @Copyright 2017 <b>Thought</b>Works </p>
         </footer>
 
