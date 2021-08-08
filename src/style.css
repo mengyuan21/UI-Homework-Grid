@@ -154,10 +154,6 @@ html, body {
   background-color: #435466;
 }
 
-.center-link {
-  align-self: center ;
-}
-
 #actions-agent{
   display: flex;
 }
@@ -224,7 +220,7 @@ html, body {
    position: relative;
 }
 
-#ddashboard-building-text {
+#dashboard-building-text {
   width: 60px; 
   color: #f3f3f3; 
   font-size: 18px; 
@@ -295,10 +291,6 @@ html, body {
 .filter{
   grid-row: 4/6;
   background-color: var(--light-white);;
-
-}
-
-.filter {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 3fr 1fr 1fr;
