@@ -39,6 +39,16 @@ html, body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+#header-text-big {
+  color: var(--light-green-blue); 
+  font-size: 50px;
+}
+
+#header-text-small {
+  color: var(--light-black); 
+  font-size: 35px;
+}
+
 .dropdown{
   position: relative;
   left: 40%;
@@ -208,35 +218,63 @@ html, body {
     background-color: var(--dark-white);;
 }
 
-#building {
-    position: relative;
-    font-size: 18px;
-    color: var(--light-white);
-    background-color: #FF9A2A;
+#dashboard-building-block {
+  display: flex;
+   background-color:#FF9A2A; 
+   position: relative;
+}
+
+#ddashboard-building-text {
+  width: 60px; 
+  color: #f3f3f3; 
+  font-size: 18px; 
+  font: bold; 
+  position: relative; 
+  left: 20px;
+}
+
+#dashboard-building-background {
+  height: 144px; 
+  width: 144px; 
+  opacity: 20%;
+}
+
+#dashboadr-building-number {
+  color: #f3f3f3; 
+  font-size: 48px; 
+  position: absolute; 
+  right: 10%;
 }
 
 
-#building-number {
-    position: absolute;
-    bottom: 0%;
-    right: 15%;
-    font-size: 48px;
+#dashboard-idle-block {
+  display: flex; 
+  background-color:#7FBC39; 
+  position: relative;
 }
 
-#idle {
-    position: relative;
-    font-size: 18px;
-    color: var(--light-white);;
-    background-color: #7FBC39;
+#dashboard-idle-text {
+  width: 60px;  
+  color: #f3f3f3; 
+  font-size: 18px; 
+  font: bold; 
+  position: relative; 
+  left: 20px;
 }
 
-#idle-number {
-    font-size: 48px;
-    position: absolute;
-    bottom: 0%;
-    right: 15%;
-    font-size: 48px;
+#dashboard-idle-background {
+  height: 144px; 
+  width: 144px; 
+  opacity: 20%;
 }
+
+#dashboard-idle-number {
+  color: #f3f3f3; 
+  font-size: 48px; 
+  position: absolute; 
+  right: 10%;
+}
+
 
 #dashboard-info {
     display: grid;
@@ -291,6 +329,10 @@ html, body {
   background-color: rgb(212, 207, 207);
 }
 
+#input-background {
+  font-family:Arial, FontAwesome;
+}
+
 #table-icon {
   position: relative;
   top: 40%;
@@ -338,6 +380,25 @@ html, body {
   text-align: left;
   position: relative;
   left: 30px;
+}
+
+#rightlist-firstline-info1 {
+  font-size: 14px; 
+  color: var(--light-green-blue);
+}
+
+#rightlist-firstline-info2 {
+  font-size: 14px;
+  color: white; 
+  background-color:var(--filter--green);
+}
+
+#rightlist-firstline-info3 {
+  color:var(--dark-black);
+}
+
+#secondline-button-delete {
+  font-size: 16px
 }
 
 .firstline-left {

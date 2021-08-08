@@ -12,10 +12,10 @@
         <div class="header">
             <div class="header-curise">
                 <br />
-                <span style="color: var(--light-green-blue); font-size: 50px;"><b>C</b></span>
-                <span style="color: var(--light-black); font-size: 35px;"><b>RU</b></span>
-                <span style="color: var(--light-green-blue); font-size: 50px;"><b>I</b></span>
-                <span style="color: var(--light-black); font-size: 35px;"><b>SE</b></span>
+                <span id="header-text-big"><b>C</b></span>
+                <span id="header-text-small"><b>RU</b></span>
+                <span id="header-text-big"><b>I</b></span>
+                <span id="header-text-small"><b>SE</b></span>
             </div>
             <div class="dropdown">
                 <button class="button-user-login"> user pic </button>
@@ -68,28 +68,16 @@
 
             <div class="right-container">
                 <div class="dashboard">
-                    <!-- <div class="dashboard-building">
+                     <div id="dashboard-building-block">
                         <p id="dashboard-building-text"><b>Building</b></p>
-                        <img src="cog-solid.svg" id="dashobard-building-background" />
-                        <p id="dashboard-building-bumber"><b>3</b></p>
-                    </div> -->
-
-                    <div style="display: flex; background-color:#FF9A2A; position: relative;">
-                        <p
-                            style="width: 60px; color: #f3f3f3; font-size: 18px; font: bold; position: relative; left: 20px;">
-                            <b>Building</b>
-                        </p>
-                        <img src="cog-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
-                        <p style="color: #f3f3f3; font-size: 48px; position: absolute; right: 10%;"><b>3</b></p>
+                        <img id="dashboard-building-background" src="cog-solid.svg" />
+                        <p id="dashboadr-building-number"><b>3</b></p>
                     </div>
 
-                    <div style="display: flex; background-color:#7FBC39; position: relative;">
-                        <p
-                            style="width: 60px;  color: #f3f3f3; font-size: 18px; font: bold; position: relative; left: 20px;">
-                            <b>Idle</b>
-                        </p>
-                        <img src="coffee-solid.svg" style="height: 144px; width: 144px; opacity: 20%;" />
-                        <p style="color: #f3f3f3; font-size: 48px; position: absolute; right: 10%;"><b>5</b></p>
+                    <div id="dashboard-idle-block">
+                        <p id="dashboard-idle-text"><b>Idle</b></p>
+                        <img id="dashboard-idle-background" src="coffee-solid.svg" />
+                        <p id="dashboard-idle-number"><b>5</b></p>
                     </div>
                     <div id="dashboard-info">
                         <div id="table-item"><b>ALL</b></div>
@@ -108,7 +96,7 @@
                     <div>
                         <img>
                         <input class="filter-input" type="text" placeholder="&#xF002;"
-                            style="font-family:Arial, FontAwesome">
+                           id="input-background" >
                     </div>
                     <i class="fas fa-table" id="table-icon"></i>
                     <i class="fas fa-th-list" id="list-icon"></i>
@@ -122,46 +110,41 @@
                             <div class="rightlist-firstline">
                                 <div class="firstline-left">
                                     <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr01.thoughtworks.com</strong></span>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--green);">
-                                        &nbsp; &nbsp;idle &nbsp; &nbsp;</span>
+                                    <span id="rightlist-firstline-info1"><strong>bjstdmnbgr01.thoughtworks.com</strong></span>
+                                    <span id="rightlist-firstline-info2"> &nbsp; &nbsp;idle &nbsp; &nbsp;</span>
                                 </div>
                                 <div class="firstline-right">
                                     <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.102 </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp; 192.168.1.102 &nbsp; </span>
                                     <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                    <span id="#rightlist-firstline-info3"> &nbsp; /var/lib/curise-agent&nbsp;  </span>
                                 </div>
                             </div>
                             <div class="rightlist-secondline">
                                 <div class="secondline-left">
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Firefox</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img  id="secondline-button-delete" src="src/img/trash.svg"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Safari</b>
-                                        <img src="src/img/trash.svg" />
+                                        <img id="secondline-button-delete" src="src/img/trash.svg" />
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"> <b>Ubuntu</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img id="secondline-button-delete" src="src/img/trash.svg"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Chrome</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img id="secondline-button-delete" src="src/img/trash.svg"/>
                                     </button>
                                 </div>
                                 <div class="secondline-right">
-                                    <!-- <button class="button-second-line-deny">
-                                        <img src="src/img/deny.svg" style="font-size: 16px;" />
-                                        <b>Deny</b></button> -->
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="list-item">
                         <div class="list-item-left">
                             <i class="fab fa-windows"></i>
@@ -170,24 +153,21 @@
                             <div class="rightlist-firstline">
                                 <div class="firstline-left">
                                     <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr08.thoughtworks.com</strong></span>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--yellow);">
-                                        &nbsp; &nbsp;building &nbsp; &nbsp;</span>
+                                    <span id="rightlist-firstline-info1"><strong>bjstdmnbgr08.thoughtworks.com</strong></span>
+                                    <span id="rightlist-firstline-info2">&nbsp; &nbsp;building &nbsp; &nbsp;</span>
                                 </div>
                                 <div class="firstline-right">
                                     <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.243 </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp; 192.168.1.243 &nbsp; </span>
                                     <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                    <span id="rightlist-firstline-info3">&nbsp;  /var/lib/curise-agent&nbsp;  </span>
                                 </div>
                             </div>
                             <div class="rightlist-secondline">
                                 <div class="secondline-left">
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Firefox</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Safari</b>
@@ -195,16 +175,16 @@
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"> <b>Ubuntu</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Chrome</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete" />
                                     </button>
                                 </div>
                                 <div class="secondline-right">
                                     <button class="button-second-line-deny">
-                                        <img src="src/img/deny.svg" style="font-size: 16px;" />
+                                        <img src="src/img/deny.svg" id="secondline-button-delete"/>
                                         <b>Deny</b></button>
                                 </div>
                             </div>
@@ -218,24 +198,21 @@
                             <div class="rightlist-firstline">
                                 <div class="firstline-left">
                                     <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr10.thoughtworks.com</strong></span>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--yellow);">
-                                        &nbsp; &nbsp;building &nbsp; &nbsp;</span>
+                                    <span id="rightlist-firstline-info1"><strong>bjstdmnbgr10.thoughtworks.com</strong></span>
+                                    <span id="rightlist-firstline-info2">&nbsp; &nbsp;building &nbsp; &nbsp;</span>
                                 </div>
                                 <div class="firstline-right">
                                     <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.80 </span>
+                                    <span id="rightlist-firstline-info3">&nbsp; 192.168.1.80 &nbsp;</span>
                                     <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp;/var/lib/curise-agent&nbsp; </span>
                                 </div>
                             </div>
                             <div class="rightlist-secondline">
                                 <div class="secondline-left">
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Firefox</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete" />
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Safari</b>
@@ -243,16 +220,16 @@
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"> <b>Ubuntu</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Chrome</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete" />
                                     </button>
                                 </div>
                                 <div class="secondline-right">
                                     <button class="button-second-line-deny">
-                                        <img src="src/img/deny.svg" style="font-size: 16px;" />
+                                        <img src="src/img/deny.svg" id="secondline-button-delete" />
                                         <b>Deny</b></button>
                                 </div>
                             </div>
@@ -266,24 +243,21 @@
                             <div class="rightlist-firstline">
                                 <div class="firstline-left">
                                     <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr11.thoughtworks.com</strong></span>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--yellow);">
-                                        &nbsp; &nbsp;building &nbsp; &nbsp;</span>
+                                    <span id="rightlist-firstline-info1"><strong>bjstdmnbgr11.thoughtworks.com</strong></span>
+                                    <span id="rightlist-firstline-info2">&nbsp; &nbsp;building &nbsp; &nbsp;</span>
                                 </div>
                                 <div class="firstline-right">
                                     <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.117 </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp;192.168.1.117 &nbsp;</span>
                                     <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp;/var/lib/curise-agent&nbsp; </span>
                                 </div>
                             </div>
                             <div class="rightlist-secondline">
                                 <div class="secondline-left">
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Firefox</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Safari</b>
@@ -291,16 +265,16 @@
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"> <b>Ubuntu</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>&nbsp;
                                     <button class="button-second-line-plus"> <b>+</b></button>
                                     <button class="button-second-line-delete"><b>Chrome</b>
-                                        <img src="src/img/trash.svg" style="font-size: 16px;" />
+                                        <img src="src/img/trash.svg" id="secondline-button-delete"/>
                                     </button>
                                 </div>
                                 <div class="secondline-right">
                                     <button class="button-second-line-deny">
-                                        <img src="src/img/deny.svg" style="font-size: 16px;" />
+                                        <img src="src/img/deny.svg" id="secondline-button-delete"/>
                                         <b>Deny</b></button>
                                 </div>
                             </div>
@@ -315,17 +289,14 @@
                             <div class="rightlist-firstline">
                                 <div class="firstline-left">
                                     <i class="fas fa-laptop"></i>
-                                    <span
-                                        style="font-size: 14px; color: var(--light-green-blue);"><strong>bjstdmnbgr15.thoughtworks.com</strong></span>
-                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                    <span style="font-size: 14px;color: white; background-color:var(--filter--green);">
-                                        &nbsp; &nbsp;idle &nbsp; &nbsp;</span>
+                                    <span id="rightlist-firstline-info1"><strong>bjstdmnbgr15.thoughtworks.com</strong></span>
+                                    <span  id="rightlist-firstline-info2" >&nbsp; &nbsp;idle &nbsp; &nbsp;</span>
                                 </div>
                                 <div class="firstline-right">
                                     <i class="fas fa-info-circle"></i>
-                                    <span style="color:var(--dark-black);"> 192.168.1.110 </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp;192.168.1.110&nbsp; </span>
                                     <i class="far fa-folder"></i>
-                                    <span style="color:var(--dark-black);"> /var/lib/curise-agent </span>
+                                    <span id="rightlist-firstline-info3"> &nbsp;/var/lib/curise-agent &nbsp;</span>
                                 </div>
                             </div>
                             <div class="rightlist-secondline">
