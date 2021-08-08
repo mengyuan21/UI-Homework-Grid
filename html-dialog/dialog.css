@@ -1,0 +1,67 @@
+*, *::after, *::before {
+    box-sizing: border-box
+}
+
+.modal {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) ;
+    /* scale(0) : 等于invisiable */
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color:cornsilk ;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+    /* active时显示modal */
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    /* 光标悬停在元素上时显示的相应样式 */
+    border: none;
+    outline: none;
+    background-color: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    /* 设置为默认不显示 */
+    pointer-events: none;
+    /* 禁止在进入弹窗后还能点击“open modal” */
+    left: 0;
+    right: 0%;
+    top: 0%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
