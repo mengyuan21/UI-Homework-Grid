@@ -112,6 +112,7 @@ html, body {
     grid-template-rows: 2fr 3fr;
     grid-column: 2/4;
     position: relative;
+    /*疑问：为什么这里需要设置position：relative*/
     background-color: #2D4054;
 }
 
@@ -119,6 +120,7 @@ html, body {
     display: grid;
     grid-template-rows: repeat(4,1fr);
     font-size: 24px;
+    /*疑问：为什么给了整个section的font-size为24*/
     position: relative;
     text-align: start;
     padding: 20px;
@@ -146,6 +148,7 @@ html, body {
 }
 
 #actions-dashboard{
+  /*  17. - 这里也可以使用grid*/
   display: flex;
 }
 
